@@ -64,3 +64,11 @@
 
 
 
+@media screen and (max-width: 576px) {
+  .home, .shop{
+    display: none;
+  }
+  .nav-cart{
+    margin: auto;
+  }
+}
