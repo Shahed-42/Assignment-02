@@ -79,18 +79,31 @@
   font-size: 22px;
 }
 
-.fresh{
+.fresh, .flower{
   color: #E95A08;
 }
 
 
 @media screen and (max-width: 576px) {
-  .home, .shop{
+  .home, .shop, .always{
     display: none;
   }
   .nav-cart{
     margin: auto;
   }
 
+  .flower{
+    font-size: 25px;
+    font-weight: bold;
+  }
 
+  .banner{
+    flex-direction: column-reverse;
+    padding: 28px 16px 0px 16px;
+  }
+
+  .banner-description{
+   font-size: 16px;
+   font-weight: 500;
+  }
 }
