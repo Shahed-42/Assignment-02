@@ -19,16 +19,18 @@
   font-style: normal;
 }
 
+
 /* shared style */
 .disply-flex{
     display: flex;
 }
 
 
-
 /* navbar section */
 .navbar{
     justify-content: space-around;
+    padding: 30px;
+    gap: 30px 150px 120px;
 }
 
 .nav-links{
@@ -37,7 +39,7 @@
 
 .nav-item{
   list-style: none;
-  margin-right: 44px;
+  padding-right: 44px;
 }
 
 .nav-link{
@@ -59,9 +61,27 @@
 }
 
 
+/* banner section */
+.banner{
+  display: flex;
+  justify-content: center;
+  gap: 120px 150px;
+  padding-top: 120px;
+}
 
+.banner-title{
+  font-size: 60px;
+  font-weight: bold;
+}
 
+.banner-description{
+  color: #7e7d7d;
+  font-size: 22px;
+}
 
+.fresh{
+  color: #E95A08;
+}
 
 
 @media screen and (max-width: 576px) {
@@ -71,4 +91,6 @@
   .nav-cart{
     margin: auto;
   }
+
+
 }
