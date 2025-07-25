@@ -19,8 +19,7 @@
   font-style: normal;
 }
 
-body {
-  background-color: #f4f6fb;
+body{
   margin: 0;
   padding: 0;
   color: #333;
@@ -194,7 +193,6 @@ body {
 }
 
 .lover-text-content ul {
-  /* list-style: disc; */
   padding-left: 20px;
   color: #777;
 }
@@ -204,6 +202,223 @@ body {
   line-height: 1.6;
 }
 
+
+/* deals section */
+.deals-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.title span {
+    color: #e56a1a; /* Orange color for 'Latest' */
+}
+
+.description {
+    font-size: 16px;
+    color: #777;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.offers {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.offers-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.offers-right {
+  flex: 2;
+}
+
+.offer-card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.large-card {
+  height: 420px;
+}
+
+.offer-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.offer-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+}
+
+.offer-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.offer-content a {
+  text-decoration: underline;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.offer-content a:hover {
+  color: #f9c846;
+}
+
+
+.bloom{
+  background-image: url(/Assets/Pic/deal-bloom.png);
+}
+
+.ana{
+  background-image: url(/Assets/Pic/deal-ana.png);
+}
+
+.zabo{
+  background-image: url(/Assets/Pic/deal-zabo.png);
+}
+
+
+/* join section */
+.join{
+   background: url(/Assets/Pic/news-letter-bg.png) center/cover no-repeat;
+  height: 533px;
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.join h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.subscribe-box {
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe-box input {
+  padding: 10px;
+  width: 300px;
+  border: none;
+  outline: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.subscribe-box button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #f15b2a;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+}
+
+.subscribe-box button:hover {
+  background-color: #d94d20;
+}
+
+
+/* Footer Section */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 80px;
+  background: #f8f8f8;
+  color: #555;
+}
+
+.footer-left {
+  max-width: 250px;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.footer-links {
+  display: flex;
+  gap: 50px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #555;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #ff6600;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social a {
+  font-size: 24px;
+  color: #555;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #ff6600;
+}
 
 
 
@@ -234,5 +449,65 @@ body {
   .product-grid{
     flex-direction: column;
     grid-template-columns: repeat(2, 4fr);
+  }
+
+
+  /* deal section */
+  .deals-section{
+    padding: 40px 15px;
+  }
+
+  .title{
+    font-size: 24px;
+  }
+  .direction{
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+
+  .offers{
+    flex-direction: column;
+  }
+
+
+  /* join */
+  .join{
+    height: auto;
+    padding: 40px 15px;
+  }
+
+  .join h1{
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+
+
+  /* footer */
+  .footer {
+    flex-direction: column;
+    text-align: left;
+    padding: 22px;
+    gap: 20px;
+  }
+
+  .footer-left {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+  }
+
+  .footer-social {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .footer-links ul li {
+    margin-bottom: 8px;
   }
 }
