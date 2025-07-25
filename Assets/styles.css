@@ -298,21 +298,21 @@ body{
 
 
 .bloom{
-  background-image: url(/Assets/Pic/deal-bloom.png);
+  background-image: url(./Pic/deal-bloom.png);
 }
 
 .ana{
-  background-image: url(/Assets/Pic/deal-ana.png);
+  background-image: url(./Pic/deal-ana.png);
 }
 
 .zabo{
-  background-image: url(/Assets/Pic/deal-zabo.png);
+  background-image: url(./Pic/deal-zabo.png);
 }
 
 
 /* join section */
 .join{
-   background: url(/Assets/Pic/news-letter-bg.png) center/cover no-repeat;
+   background: url(./Pic/news-letter-bg.png) center/cover no-repeat;
   height: 533px;
   margin-top: 32px;
   display: flex;
