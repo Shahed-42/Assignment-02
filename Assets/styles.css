@@ -149,17 +149,67 @@ body {
 }
 
 
+/* plants lover seection */
 
+.plants-lover{
+  background-color: #f4f6fb;
+  padding: 40px 20px;
+}
 
+.plants-lover-content {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 30px;
+}
 
+.img-plants {
+  position: relative;
+  flex: 1;
+  min-width: 250px;
+}
 
+.feature-img {
+  width: 100%;
+  border-radius: 8px;
+}
 
+.badge-img {
+  position: absolute;
+  top: -70px;
+  left: 65%;
+  transform: translateX(40%);
+  width: 180px;
+}
+
+.lover-text-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.lover-text-content h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.lover-text-content ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: #777;
+}
+
+.lover-text-content li {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
 
 
 
 
 @media screen and (max-width: 576px) {
-  .home, .shop, .always{
+  .home, .shop, .always, .badge-img{
     display: none;
   }
   .nav-cart{
